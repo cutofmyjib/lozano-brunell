@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  background-image: url(header-lace.png), url(footer-lace.png);
+  background-position: 0% 0%, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #928779;
+  color: #CFF8DD;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  height: 380px;
+  margin-bottom: -80px;
+}
+
+nav {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  background: #CFF8DD;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+.nav-menu a {
+  z-index: 1;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Curely', 'Berkshire Swash', cursive;
+  font-size: 1.75em;
+  padding: 6px 30px;
+  color: #5C544B;
+}
+
+.nav-menu a:hover {
+  cursor: pointer;
+  color: #CFF8DD;
+  background: #928779;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 175px
+}
+
+.main-title {
+  font-family: 'Curely', 'Berkshire Swash', cursive;
+  font-size: 4.5em;
+  letter-spacing: 1px;
+  margin: 0;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+.main-title-span {
+  vertical-align: middle;
+  font-size: .5em;
+  letter-spacing: .5px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  display: inline-block;
+  padding: 0;
+}
+
+.main p {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 1.5em;
+  margin: 0;
+  letter-spacing: .5px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Curely', 'Berkshire Swash', cursive;
+  font-size: 1.75em;
+  letter-spacing: 1.5px;
+  margin-bottom: .5em;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  line-height: 20%;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  height: 350px;
+  margin-top: -75px;
+}
+
+/******************************
+          INDEX
+******************************/
+.header-rose {
+  position: absolute;
+  background-image: url(header-rose.png);
+  background-position: 110% 105%;
+  background-repeat: no-repeat;
+  height: 380px;
+  width: 380px;
+  top: 0;
+  right: -50px;
+}
+
+.footer-rose {
+  position: absolute;
+  background-image: url(footer-rose.png);
+  background-position: 80% 10%;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 470px;
+  bottom: 0;
+}
+
+/******************************
+          DETAILS
+******************************/
+.break-fig8 {
+  background-image: url(break-fig8.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 24px 0;
+  height: 40px;
+  width: 130px;
+}
+
+.break-heart {
+  background-image: url(break-heart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 24px 0;
+  height: 60px;
+  width: 130px;
+}
+
+/******************************
+          GALLERY
+******************************/
+.gallery {
+  margin: 0;
+  padding: 0;
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.gallery li {
+  box-sizing: border-box;
+  list-style: none;
+  width: 300px;
+  height: 250px;
+  margin: 6px;
+  border: 10px solid #E3E4D8;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+.gallery li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+a.gallery-backward, a.gallery-forward {
+  opacity: 1;
+}
+
+.gallery-backward {
+  z-index: 1;
+  display: block;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  background-image: url(gallery-arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95px;
+  width: 85px;
+}
+
+.gallery-forward {
+  z-index: 1;
+  display: block;
+  background-image: url(gallery-arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95px;
+  width: 85px;
+}
+
+a.gallery-backward:hover, a.gallery-forward:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+
+@font-face {
+  font-family: 'Curely'
+  src: url('Curely-Free-Typeface.otf');
+}
